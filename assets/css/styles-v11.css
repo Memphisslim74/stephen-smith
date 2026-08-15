@@ -340,3 +340,143 @@ h3 { margin-bottom: 10px; font-size: 20px; line-height: 1.2; letter-spacing: -0.
 @media (max-width: 760px) {
   .brand-signature { width: 170px; max-width: 54vw; }
 }
+
+/* v11: cache-safe header and consolidated page-layout refinements */
+.brand {
+  flex: 0 0 auto;
+  min-width: 220px;
+}
+.brand-signature {
+  width: 220px;
+  max-width: 42vw;
+  height: auto;
+}
+
+#leadership.section-pad {
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+#leadership .leadership-topline {
+  grid-template-columns: minmax(0, 1fr) 280px !important;
+  gap: 48px !important;
+  align-items: start !important;
+  margin-bottom: 30px !important;
+}
+#leadership .leadership-heading {
+  max-width: 820px !important;
+}
+#leadership .leadership-heading p:not(.eyebrow) {
+  max-width: 760px !important;
+  margin-bottom: 0 !important;
+  line-height: 1.62;
+}
+#leadership .leadership-heading > p + p {
+  margin-top: 16px;
+}
+#leadership .leadership-photo-card {
+  width: 280px !important;
+  max-width: 280px !important;
+  height: 280px !important;
+  margin: 8px 0 0 auto !important;
+}
+#leadership .leadership-photo-card img {
+  object-position: center center !important;
+}
+#leadership .leadership-cards {
+  gap: 16px !important;
+}
+#leadership .leadership-cards .capability-card {
+  padding: 22px !important;
+}
+
+.how-work-section {
+  padding-top: 82px !important;
+  padding-bottom: 82px !important;
+}
+.how-work-section .how-work-grid {
+  grid-template-columns: minmax(0, 520px) 420px !important;
+  gap: 56px !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.how-work-section .principles-card {
+  max-width: 520px !important;
+  padding: 36px;
+}
+.how-work-section .principles-card > p {
+  line-height: 1.66;
+}
+.how-work-section .work-photo {
+  width: 420px !important;
+  height: 420px !important;
+}
+.how-work-section .work-photo img {
+  object-position: center center !important;
+}
+
+@media (max-width: 1050px) {
+  #leadership .leadership-topline {
+    grid-template-columns: minmax(0, 1fr) 220px !important;
+    gap: 32px !important;
+  }
+  #leadership .leadership-photo-card {
+    width: 220px !important;
+    max-width: 220px !important;
+    height: 220px !important;
+  }
+  .how-work-section .how-work-grid {
+    grid-template-columns: minmax(0, 620px) !important;
+    justify-content: center !important;
+  }
+  .how-work-section .principles-card {
+    max-width: 620px !important;
+  }
+  .how-work-section .work-photo {
+    width: 380px !important;
+    height: 380px !important;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .brand {
+    min-width: 0;
+  }
+  .brand-signature {
+    width: 174px;
+    max-width: 58vw;
+  }
+  #leadership.section-pad {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  #leadership .leadership-topline {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+  #leadership .leadership-photo-card {
+    width: min(100%, 240px) !important;
+    max-width: 240px !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+    margin: 0 !important;
+  }
+  #leadership .leadership-cards .capability-card {
+    padding: 20px !important;
+  }
+  .how-work-section {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+  .how-work-section .how-work-grid {
+    gap: 28px !important;
+  }
+  .how-work-section .principles-card {
+    padding: 26px;
+  }
+  .how-work-section .work-photo {
+    width: min(100%, 340px) !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+}
