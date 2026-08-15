@@ -1,0 +1,65 @@
+/* Focused final layout layer: authentic brand mark and matched leadership columns. */
+.brand-signature-wrap {
+  position: relative;
+  display: inline-flex;
+  width: 248px;
+  padding: 3px 0 8px;
+}
+
+.brand-signature-wrap::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 3%;
+  bottom: 5px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--gold) 12%, var(--gold-2) 72%, transparent);
+  transform: rotate(-2deg);
+}
+
+.brand-signature {
+  width: 100% !important;
+  max-width: none !important;
+  height: 48px !important;
+  object-fit: contain;
+}
+
+#leadership .leadership-topline {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+}
+
+#leadership .leadership-photo-card {
+  position: relative;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  align-self: stretch;
+}
+
+#leadership .leadership-photo-card img {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+@media (max-width: 860px) {
+  .brand-signature-wrap { width: 210px; }
+
+  #leadership .leadership-topline {
+    grid-template-columns: 1fr !important;
+  }
+
+  #leadership .leadership-photo-card {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+@media (max-width: 760px) {
+  .brand-signature-wrap { width: 182px; }
+  .brand-signature { height: 42px !important; }
+}
