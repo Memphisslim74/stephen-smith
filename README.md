@@ -12,6 +12,8 @@ Static personal website for [thestephensmith.com](https://thestephensmith.com), 
 
 Every commit pushed to `main` becomes the source for a new Cloudflare Pages production deployment after the repository is connected in Cloudflare.
 
+> If the existing Cloudflare Pages project was created with Direct Upload, Cloudflare does not allow that project to be converted to Git integration. Create a new Pages project with **Connect to Git**, deploy this repository, verify the new `*.pages.dev` URL, and then move `thestephensmith.com` to the new project.
+
 ## Structure
 
 - `index.html` — single-page website
