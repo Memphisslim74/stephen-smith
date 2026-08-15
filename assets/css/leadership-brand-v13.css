@@ -2,26 +2,18 @@
 .brand-signature-wrap {
   position: relative;
   display: inline-flex;
-  width: 248px;
-  padding: 3px 0 8px;
+  width: 275px;
+  padding: 0;
 }
 
 .brand-signature-wrap::after {
-  content: "";
-  position: absolute;
-  left: 10%;
-  right: 3%;
-  bottom: 5px;
-  height: 3px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, transparent, var(--gold) 12%, var(--gold-2) 72%, transparent);
-  transform: rotate(-2deg);
+  content: none;
 }
 
 .brand-signature {
   width: 100% !important;
   max-width: none !important;
-  height: 48px !important;
+  height: 58px !important;
   object-fit: contain;
 }
 
@@ -48,7 +40,7 @@
 }
 
 @media (max-width: 860px) {
-  .brand-signature-wrap { width: 210px; }
+  .brand-signature-wrap { width: 235px; }
 
   #leadership .leadership-topline {
     grid-template-columns: 1fr !important;
@@ -60,6 +52,6 @@
 }
 
 @media (max-width: 760px) {
-  .brand-signature-wrap { width: 182px; }
-  .brand-signature { height: 42px !important; }
+  .brand-signature-wrap { width: 205px; }
+  .brand-signature { height: 48px !important; }
 }
